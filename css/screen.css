@@ -1,0 +1,288 @@
+body {
+    padding-top:5px;
+}
+#container {
+    margin:15px auto;
+    max-width: 1180px;
+    padding: 0 10px;
+}
+
+/**
+* Words
+*/
+.render-allwords {
+    border: 1px solid #ddd;
+}
+.render-allwords .collapse-text {
+    display: none;
+}
+.render-allwords .collapse-text-show{
+    cursor:pointer;
+}
+.render-allwords td.word-en {
+    min-width:50px;
+}
+.render-allwords td.word-lp {
+    width:10px;
+}
+.render-allwords td.word-progress {
+    width:15%;
+}
+.render-allwords td.word-progress .progress {
+    margin-bottom:0;
+}
+.render-allwords .word-sound{
+    width:10px;
+    cursor:pointer;
+}
+#add-word-form {
+    margin-bottom: 40px;
+    width: 90%;
+}
+#add-word-form .block {
+    display:block;
+}
+
+#word-loading {
+    margin-left: 5px;
+    margin-top: -3px;
+    display: inline-block;
+    position: absolute;
+}
+#word-loading img {
+    display:none;
+}
+
+#word-add-pl {
+    width: 500px;
+}
+#word-add-en {
+    width: 200px;
+}
+.button-higher {
+    padding: 13px;
+}
+.render-allwords .word-remove {
+    cursor:pointer;
+}
+#words .accordion-content{
+    display:none;
+}
+#cat-select {
+    margin-bottom:20px;
+}
+/**
+* Fiszki
+*/
+#fiszki {
+    width: 650px;
+    margin:100px auto;
+}
+
+#fiszki .box {
+    width: 50px;
+    text-align: center;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 20px 0;
+    margin: 5px 13px;
+    display: inline-block;
+    box-shadow: 1px 1px 5px rgba(63, 63, 63, 0.3);
+    font-weight: bold;
+    font-size: 20px;
+    color: #444;
+}
+
+#fiszki .box-animate {
+    width: 50px;
+    text-align: center;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 20px 0;
+    margin: 5px 13px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #444;
+    position:absolute;
+}
+#fiszki .box-animate span{
+    opacity:0;
+}
+#fiszki .check {
+    float: left;
+    margin: 10px 20px;
+    padding: 11px 19px;
+    cursor:pointer;
+    padding: 14px 19px;
+}
+#flashcard {
+    text-align: center;
+}
+#flashcard #tip{
+    display:none;
+}
+#flashcard #word,  #flashcard #tip {
+    width: 320px;
+    height: 100px;
+    background: #fff;
+    border:1px solid #c43c35;
+}
+#play-sound {
+    float: left;
+    margin: 10px 20px;
+    cursor:pointer;
+    padding: 11px 19px;
+}
+.flashcard-swap {
+    display:none;
+}
+#flip {
+    width: 340px;
+    height: 160px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding:20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 7px rgba(63, 63, 63, 0.3);
+    margin-left: 10px;
+    line-height: 1.5em;
+}
+.speaker {
+    background:url('img/thumbs/glyphicons_184_volume_up.png') no-repeat;
+    width:24px;
+    height:26px;
+    display:block;
+}
+#fiszki .flashcard-eng {
+    margin-top:50px;
+}
+#main-footer {
+    text-align:center;
+    color:#aaa;
+}
+#main-footer>div {
+    border-top:1px solid #ddd;
+    height:1px;
+    width:100%;
+    box-shadow: 0px -2px 7px rgba(63, 63, 63, 0.3);
+}
+
+.template {
+    display:none !important;
+}
+#select-cat {
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#select-cat button, .btn200 {
+    margin:2px;
+    width:170px;
+}
+/**
+* Categories
+*/
+.cat-remove, .cat-refresh {
+    cursor:pointer;
+    margin:0 5px;
+}
+.cat-progress {
+    float:right;
+    width:20%;
+    margin: 0;
+}
+
+/**
+* Stats
+*/
+#countstats table {
+    width:100%;
+}
+#countstats table td {
+    width:25%;
+    font-size:20px;
+    padding:20px;
+    color: #fff;
+}
+#countstats table td div{
+     padding: 20px;
+     text-align: center;
+     border-radius: 10px;
+}
+#countstats table td span{
+    font-weight: bold;
+}
+#countstats table td:nth-child(1) div{
+    background: #4572A7;
+}
+#countstats table td:nth-child(2) div{
+    background: #AA4643;
+}
+#countstats table td:nth-child(3) div{
+    background: #89A54E;
+}
+#countstats table td:nth-child(4) div{
+    background: #80699B;
+}
+
+/**
+* Interface
+*/
+#user-login {
+    float: right;
+}
+#user-login>span {
+    font-size: 20px;
+    color: #777;
+}
+#user-login>span:hover {
+   text-decoration: none;
+}
+
+
+
+/**
+* Some resonsive fix
+*/
+@media (max-width: 979px) {
+    .hero-unit {
+        padding: 20px;
+    }
+    .hero-unit h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    #word-add-pl, #word-add-en {
+        width: 95%;
+    }
+    .hero-unit {
+        padding: 10px;
+    }
+    .hero-unit h1{
+        font-size: 40px;
+    }
+}
+.collapse {
+    position:static;
+}
+#register-form .input-block-level{
+    width:200px;
+}
+#register-form .help-inline {
+    font-weight:bold;
+    font-size:12px;
+    padding-bottom:11px;
+    display:none;
+}
+#register-form .help-inline .label{
+    padding: 6px;
+}

@@ -1,0 +1,7 @@
+/* IMPORT */
+#export-cats tr td:first-child {
+     width:20px;
+ }
+#export-cats tr:first-child td {
+    border-top:0;
+}
